@@ -66,7 +66,7 @@ target_link_libraries(trigger_calibration ${catkin_LIBRARIES})
 add_dependencies(trigger_calibration avc_generate_messages_cpp)
 
 ## Specify additional locations of header files
-include_directories(
+include_directories(cd
   include
   ${PCL_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
@@ -77,3 +77,4 @@ include_directories(
 add_subdirectory(src/planner)
 add_subdirectory(src/scanToPointCloud)
 add_subdirectory(src/mapper)
+add_subdirectory(src/image-tutorial)
